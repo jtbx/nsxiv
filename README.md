@@ -7,14 +7,7 @@ with the purpose of being a drop-in replacement of sxiv, maintaining it and
 adding simple, sensible features. nsxiv is free software licensed under GPLv2
 and aims to be easy to modify and customize.
 
-Please file a bug report if something does not work as documented or
-expected in *this* repository, after making sure you are using the latest
-release of nsxiv. Contributions are welcome, see
-[CONTRIBUTING.md](CONTRIBUTING.md#Contribution-Guideline) for details.
-
-
-Features
---------
+## Features
 
 * Basic image operations, e.g. zooming, panning, rotating
 * Customizable key and mouse button mappings (in *config.h*)
@@ -26,30 +19,12 @@ Features
 * Customizable window title
 
 
-Screenshots
------------
+## Screenshots
 
-![Thumb](https://raw.githubusercontent.com/jtbx-etc/nsxiv/images/Demonstration.png "Demonstration")
-
-
-Installing via package manager
-------------------------------
-
-<a href="https://repology.org/project/nsxiv/versions">
-    <img align="right" width="192" src="https://repology.org/badge/vertical-allrepos/nsxiv.svg">
-</a>
-
-nsxiv is available on the following distributions/repositories. If you don't see
-your distro listed here, either contact your distro's package maintainer or
-consider packaging it yourself and adding it to the respective community repo.
-
-Repos not tracked by repology:
-
-* Fedora: Enable the copr repo via `dnf copr enable mamg22/nsxiv`.
+![Demonstration](https://raw.githubusercontent.com/jtbx-etc/nsxiv/main/images/Demonstration.jpg "Demonstration")
 
 
-Dependencies
-------------
+## Dependencies
 
 nsxiv requires the following software to be installed:
 
@@ -78,18 +53,9 @@ packages (e.g. \*-dev on Debian).
 Building
 --------
 
-nsxiv is built using the commands:
+nsxiv is built by using the command:
 
     $ make
-
-You can pass `HAVE_X=0` to `make` to disable an optional dependency.
-For example:
-
-    $ make HAVE_LIBEXIF=0
-
-will disable `libexif` support. Alternatively they can be disabled via editing
-the `Makefile` directly. `OPT_DEP_DEFAULT=0` can be used to disable all
-optional dependencies.
 
 Installing nsxiv:
 
@@ -107,7 +73,7 @@ Installing all of the above:
 
     # make install-all
 
-Please note, that these requires root privileges.
+Please note that installing requires root privileges.
 By default, nsxiv is installed using the prefix `/usr/local`, so the full path
 of the executable will be `/usr/local/bin/nsxiv`, the `.desktop` entry will be
 `/usr/local/share/applications/nsxiv.desktop` and the icon path will be
@@ -120,6 +86,16 @@ You can install nsxiv into a directory of your choice by changing this command t
 Example scripts are installed using `EGPREFIX` which defaults to
 `/usr/local/share/doc/nsxiv/examples`. You can change `EGPREFIX` the same way
 you can change `PREFIX` shown above.
+
+You can pass `HAVE_X=0` to `make` to disable an optional dependency.
+For example:
+
+    $ make HAVE_LIBEXIF=0
+
+will disable `libexif` support. Alternatively they can be disabled via editing the `Makefile` directly.
+
+`OPT_DEP_DEFAULT=0` can be used to disable all optional dependencies.
+
 
 The build-time specific settings of nsxiv can be found in the file *config.h*.
 Please check and change them, so that they fit your needs.
@@ -180,10 +156,10 @@ nsxiv-extra's [README](https://github.com/nsxiv/nsxiv-extra).
 Download
 --------
 
-You can [browse](https://github.com/nsxiv/nsxiv) the source code repository
+You can [browse](https://github.com/jtbx-etc/nsxiv) the source code repository
 on GitHub or get a copy using git with the following command:
 
-    $ git clone https://github.com/nsxiv/nsxiv.git
+    $ git clone https://github.com/jtbx-etc/nsxiv.git
 
 You can view the changelog [here](CHANGELOG.md)
 
