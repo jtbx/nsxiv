@@ -29,13 +29,7 @@ Features
 Screenshots
 -----------
 
-**Image mode: (Default colors)**
-
-![Image](https://raw.githubusercontent.com/nsxiv/nsxiv/gh-pages/img/image.png "Image mode")
-
-**Thumbnail mode: (Custom colors)**
-
-![Thumb](https://raw.githubusercontent.com/nsxiv/nsxiv/gh-pages/img/thumb.png "Thumb mode")
+![Thumb](https://raw.githubusercontent.com/jtbx-etc/nsxiv/images/Demonstration.png "Demonstration")
 
 
 Installing via package manager
